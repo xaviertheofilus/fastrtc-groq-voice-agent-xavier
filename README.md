@@ -6,6 +6,9 @@ link demo : https://youtu.be/u9s-UUN91Bc
 
 Voice Agent Multibahasa is an AI-powered voice assistant that enables real-time multilingual communication in Indonesian and English using open-source models running entirely locally. This solution provides a comprehensive voice interface with speech-to-text, text-to-speech, and document-based question answering capabilities without requiring external API services.
 
+<img width="1919" height="995" alt="image" src="https://github.com/user-attachments/assets/cad81f01-1629-4950-bfdf-3ae50427165d" />
+
+
 ## Key Features
 
 - **Speech-to-Text (STT)**: Utilizes Whisper for accurate audio-to-text transcription
