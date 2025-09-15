@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Agent Multibahasa</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voice Agent Multibahasa</h1>
+            <p>Berbicara dalam Bahasa Indonesia atau Inggris untuk berinteraksi dengan pengetahuan dari PDF</p>
+        </header>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Chat messages will be added here -->
+            </div>
+            
+            <div class="input-section">
+                <div class="recorder-section">
+                    <button id="recordButton" class="record-btn" onclick="toggleRecording()">
+                        <span class="icon">🎙️</span>
+                        <span id="recordText">Mulai Rekam</span>
+                    </button>
+                    <div id="recordingStatus">Tidak merekam</div>
+                </div>
+                
+                <div class="upload-section">
+                    <input type="file" id="pdfUpload" accept=".pdf" style="display: none;">
+                    <button onclick="document.getElementById('pdfUpload').click()">Upload PDF</button>
+                    <div id="uploadStatus"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>Cara Penggunaan:</h3>
+            <ol>
+                <li>Upload file PDF ke folder data</li>
+                <li>Klik "Mulai Rekam" dan berbicara dalam Bahasa Indonesia atau Inggris</li>
+                <li>Sistem akan mentranskripsi, mencari jawaban dari PDF, dan merespons dengan suara</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
